@@ -1,0 +1,145 @@
+/* Experience Section */
+.experience-section {
+    padding: 4rem 2rem;
+    background-color: #0e0e0e;
+    color: #fff;
+    text-align: center;
+    background-image:
+      linear-gradient(#111 1px, transparent 1px),
+      linear-gradient(to right, #111 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+  
+  /* Title */
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+  }
+  
+  .section-subtitle {
+    font-size: 1.2rem;
+    color: #aaa;
+    margin-bottom: 2rem;
+  }
+  
+  /* Experience Container */
+  .experience-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  /* Experience Card */
+  .experience-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+  }
+  
+  /* Left and Right Alternate */
+  .experience-card.left {
+    flex-direction: row;
+  }
+  
+  .experience-card.right {
+    flex-direction: row-reverse;
+  }
+  
+  /* Company Logo */
+  .company-logo img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  /* Job Info */
+  .job-info {
+    flex: 1;
+    text-align: left;
+    padding-left: 1.5rem;
+  }
+  
+  .job-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .company-name {
+    color: #26ffc7;
+    font-weight: bold;
+  }
+  
+  /* Job Description */
+  .job-description {
+    padding-left: 0;
+    list-style: none;
+  }
+  
+  .job-description li {
+    color: #aaa;
+    margin-top: 0.5rem;
+  }
+  
+  /* Tech Tags */
+  .tech-tags {
+    margin-top: 1rem;
+  }
+  
+  .tag {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    margin-right: 0.5rem;
+  }
+  
+  /* Experience Meta (Date & Location) */
+  .experience-meta {
+    text-align: right;
+  }
+  
+  .date {
+    font-weight: bold;
+    color: #26ffc7;
+  }
+  
+  .location {
+    display: block;
+    color: #aaa;
+    font-size: 0.9rem;
+    margin-top: 0.3rem;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .experience-card {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .experience-card.left, .experience-card.right {
+      flex-direction: column;
+    }
+  
+    .job-info {
+      padding-left: 0;
+      text-align: center;
+    }
+  
+    .experience-meta {
+      text-align: center;
+      margin-top: 1rem;
+    }
+  }
+  

@@ -1,0 +1,71 @@
+/* src/components/Hero.css */
+.hero-section {
+  padding: 4rem 2rem;
+  background-color: #0e0e0e;
+  color: #fff;
+  text-align: center;
+  background-image:
+    linear-gradient(#111 1px, transparent 1px),
+    linear-gradient(to right, #111 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.hero {
+    height: 100vh;
+    /* background: url('/images/banner.jpg') no-repeat center center/cover; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .hero-text {
+    text-align: center;
+    color: #f8f7f7;
+  }
+  
+  .hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .hero-buttons .btn {
+    margin-right: 10px; /* Adjust the value as needed */
+  }
+
+  .hero-socials a{
+    margin-right: 10px; /* Adjust the value as needed */
+    margin-bottom: 0px;
+  }
+  
+  .hero-socials i {
+    /* padding: 12px; */
+    font-size: 2rem; /* Adjust the value as needed to make the icons larger */
+  }
+  .hero-socials {
+    display: flex;
+    margin-top: 20px;
+    justify-content: flex-start; /* Align items to the left */
+    margin-left: 150px; /* Add space at the start of the icons */
+  }
+
+  .hero-image {
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .hero-image img {
+
+  height: 800px;
+  width: 1000px;
+  }

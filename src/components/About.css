@@ -1,0 +1,49 @@
+/* src/components/About.css */
+.about {
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  background-color: #0e0e0e;
+  color: #fff;
+  text-align: center;
+  background-image:
+    linear-gradient(#111 1px, transparent 1px),
+    linear-gradient(to right, #111 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.about {
+    
+  }
+  
+  .about-content {
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+  }
+  
+  .profile-pic {
+    width: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .about-text h2, .about-text p, .about-text a {
+    align-items: center;
+    text-align: center; 
+  }
+  
+  .about-text h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  }
+  
+  .about-text .btn {
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+  

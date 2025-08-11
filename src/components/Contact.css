@@ -1,0 +1,46 @@
+/* src/components/Contact.css */
+.contact {
+  padding: 4rem 2rem;
+  background-color: #0e0e0e;
+  color: #fff;
+  text-align: center;
+  background-image:
+    linear-gradient(#111 1px, transparent 1px),
+    linear-gradient(to right, #111 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+/* .contact {
+    padding: 4rem 2rem;
+    text-align: center;
+  } */
+  
+  .contact h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+  
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font: inherit;
+    resize: none;
+  }
+  
