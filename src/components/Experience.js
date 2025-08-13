@@ -27,11 +27,11 @@ function Experience() {
                   ))}
                 </ul>
                 {/* Tech Stack Tags */}
-                <div className="tech-tags">
+                {/* <div className="tech-tags">
                   {exp.techStack.map((tech, idx) => (
                     <span key={idx} className="tag">{tech}</span>
                   ))}
-                </div>
+                </div> */}
               </div>
             </div>
 

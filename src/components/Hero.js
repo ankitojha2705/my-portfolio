@@ -47,7 +47,7 @@ function Hero() {
         </div>
         
         <div className="hero-image">
-          <img src={profileImage} alt="Ankit standing near a city road" />
+          <img src={profileImage} alt="Ankit pic" />
         </div>
       </div>
     </section>

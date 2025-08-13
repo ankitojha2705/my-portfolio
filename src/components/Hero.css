@@ -8,19 +8,23 @@
     linear-gradient(#111 1px, transparent 1px),
     linear-gradient(to right, #111 1px, transparent 1px);
   background-size: 40px 40px;
+  height: 100vh;
+  min-height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.hero {
-    height: 100vh;
-    /* background: url('/images/banner.jpg') no-repeat center center/cover; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
   .hero-content {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    gap: 2rem;  /* Reduced from default space */
+    padding: 0 5%;  /* Added some horizontal padding */
+    max-width: 1200px;  /* Added max-width for better control */
+    margin: 0 auto;  /* Center the content */
+    width: 100%;
+
   }
   .hero-text {
     text-align: center;
@@ -58,14 +62,17 @@
   }
 
   .hero-image {
-    width: auto;
-    height: auto;
-    border-radius: 50%;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-
+  
   .hero-image img {
-
-  height: 800px;
-  width: 1000px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #2d2e32;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
