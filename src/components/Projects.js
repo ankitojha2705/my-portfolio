@@ -36,7 +36,7 @@ function Projects() {
               <p className="project-tech-stack">{project.techStack}</p>
               <ul>
                 {project.descriptionPoints.map((point, index) => (
-                  <li key={index}>➤ {point}</li>
+                  <li key={index}>{point}</li>
                 ))}
               </ul>
             </div>

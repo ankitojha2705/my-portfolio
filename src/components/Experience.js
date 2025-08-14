@@ -20,10 +20,11 @@ function Experience() {
               </div>
               <div className="job-info">
                 <h3 className="job-title">{exp.title}</h3>
+                <br></br>
                 <p className="company-name">{exp.company}</p>
                 <ul className="job-description">
                   {exp.description.map((point, idx) => (
-                    <li key={idx}>▸ {point}</li>
+                    <li key={idx}>{point}</li>
                   ))}
                 </ul>
                 {/* Tech Stack Tags */}

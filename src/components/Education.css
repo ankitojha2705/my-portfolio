@@ -1,121 +1,245 @@
 /* Education Section */
 .education-section {
-    padding: 4rem 2rem;
-    background-color: #0e0e0e;
-    color: #fff;
-    text-align: center;
-    background-image:
-      linear-gradient(#111 1px, transparent 1px),
-      linear-gradient(to right, #111 1px, transparent 1px);
-    background-size: 40px 40px;
-  }
-  
-  /* Title */
-  .section-title {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-    text-transform: uppercase;
-  }
-  
-  .section-subtitle {
-    font-size: 1.2rem;
-    color: #aaa;
-    margin-bottom: 2rem;
-  }
-  
-  /* Education Container */
-  .education-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  }
-  
-  /* Education Cards */
+  padding: 6rem 2rem;
+  background-color: #0e0e0e;
+  color: #fff;
+  text-align: center;
+}
+
+/* Title */
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  color: #aaa;
+  margin-bottom: 3rem;
+  font-weight: 300;
+}
+
+/* Education Container */
+.education-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  position: relative;
+}
+
+/* Education Cards */
+.education-card {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 16px;
+  padding: 2.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  position: relative;
+  z-index: 2;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+}
+
+.education-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(0, 123, 255, 0.1), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+
+.education-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  border-color: rgba(0, 123, 255, 0.3);
+}
+
+.education-card:hover::before {
+  opacity: 1;
+}
+
+/* University Logo */
+.education-logo {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  overflow: hidden;
+  border: 2px solid rgba(0, 123, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.education-logo::before {
+  content: '';
+  position: absolute;
+  inset: -5px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #007bff, #00bcd4) border-box;
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.education-card:hover .education-logo {
+  transform: scale(1.05);
+  border-color: rgba(0, 123, 255, 0.5);
+}
+
+.education-card:hover .education-logo::before {
+  opacity: 1;
+}
+
+.education-logo img {
+  width: 50%;
+  height: 50%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+/* Education Info */
+.education-info {
+  flex: 1;
+  text-align: left;
+  padding: 0 2rem;
+  margin-right: auto;
+}
+
+.university-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+  margin: 0 0 0.5rem 0;
+  transition: color 0.3s ease;
+}
+
+.degree {
+  color: #26ffc7;
+  font-weight: 500;
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.gpa {
+  font-size: 0.95rem;
+  color: #aaa;
+  margin: 0 0 1rem 0;
+}
+
+/* Coursework */
+.coursework-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+}
+
+.coursework-list li {
+  color: #d1d1d1;
+  font-size: 0.95rem;
+  position: relative;
+  padding-left: 1.25rem;
+}
+
+.coursework-list li::before {
+  content: '▹';
+  position: absolute;
+  left: 0;
+  color: #007bff;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Graduation Date */
+.graduation-date {
+  background: rgba(0, 123, 255, 0.1);
+  color: #007bff;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 0.35rem 1rem;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+  align-self: flex-start;
+  margin-top: 0.25rem;
+}
+
+.education-card:hover .graduation-date {
+  background: rgba(0, 123, 255, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   .education-card {
-    display: flex;
-    align-items: center;
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 12px;
+    flex-direction: column;
     padding: 2rem;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    position: relative;
   }
   
-  /* University Logo */
-  .education-logo img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    object-fit: cover;
+  .education-logo {
+    margin-bottom: 1.5rem;
   }
   
-  /* Education Info */
   .education-info {
-    flex: 1;
-    text-align: left;
-    padding-left: 1.5rem;
+    padding: 0;
+    margin-right: 0;
+    margin-bottom: 1.5rem;
   }
   
-  .university-name {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  
-  .degree {
-    color: #26ffc7;
-    font-weight: bold;
-  }
-  
-  .gpa {
-    font-size: 1rem;
-    color: #aaa;
-    margin-top: 0.5rem;
-  }
-  
-  /* Coursework List */
-  h4 {
+  .graduation-date {
+    align-self: flex-start;
     margin-top: 1rem;
-    font-size: 1.2rem;
-    color: #ddd;
   }
   
   .coursework-list {
-    padding-left: 0;
-    list-style: none;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .section-subtitle {
+    font-size: 1rem;
+  }
+  
+  .education-card {
+    padding: 1.5rem;
+  }
+  
+  .university-name {
+    font-size: 1.3rem;
+  }
+  
+  .degree {
+    font-size: 1rem;
   }
   
   .coursework-list li {
-    color: #aaa;
-    margin-top: 0.3rem;
+    font-size: 0.9rem;
   }
-  
-  /* Graduation Date */
-  .graduation-date {
-    position: absolute;
-    top: 1rem;
-    right: 1.5rem;
-    font-weight: bold;
-    color: #26ffc7;
-  }
-  
-  /* Responsive */
-  @media (max-width: 768px) {
-    .education-card {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .education-info {
-      padding-left: 0;
-      text-align: center;
-    }
-  
-    .graduation-date {
-      position: static;
-      margin-top: 1rem;
-    }
-  }
-  
+}

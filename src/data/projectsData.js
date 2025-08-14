@@ -23,6 +23,19 @@ const projectsData = [
       ],
       image: require("../assets/QAlogo.webp"),
       alt: "CodeQuery project logo"
+    },
+    {
+      id: 3,
+      title: "Unsupervised Machine Learning for Customer Segmentation",
+      date: "Sept 2024",
+      techStack: "Python, PCA, K-Means, NLTK, spaCy",
+      descriptionPoints: [
+        "Developed a machine learning model to analyze customer data and identify distinct segments via transaction behavior.",
+        "Implemented unsupervised learning models, including PCA & K-Means, to analyze & segment customer data.",
+        "Identified distinct customer segments via transaction behavior, enabling effective targeted marketing campaigns."
+      ],
+      image: require("../assets/segmente.png"),
+      alt: "CodeQuery project logo"
     }
   ];
   
