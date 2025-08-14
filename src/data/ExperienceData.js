@@ -22,12 +22,12 @@ const experienceData = [
       duration: "Nov 2022 - Jul 2024",
       description: [
         "Developed and maintained an enterprise-level Full-Stack Web application for 700K+ employees, utilizing React, Angular, Node.js, ExpressJS, and MySQL database with responsive design patterns and robust security features.",
-        "Optimized response times by 30%, migrated legacy systems to modern frameworks (reducing technical debt by 40%),\
-        and improved overall maintainability through comprehensive code refactoring and documentation.",
-        "Designed RESTful APIs, implemented CI/CD pipelines with Jenkins and Docker, cutting release cycles by 50%,\
-        and collaborated on microservices architecture for enhanced scalability, performance, and reliability.",
+        `Optimized response times by 30%, migrated legacy systems to modern frameworks (reducing technical debt by 40%),
+        and improved overall maintainability through comprehensive code refactoring and documentation.`,
+        `Designed RESTful APIs, implemented CI/CD pipelines with Jenkins and Docker, cutting release cycles by 50%,
+        and collaborated on microservices architecture for enhanced scalability, performance, and reliability.,`
       ],
-      // techStack: ["PostgreSQL", "C", "Python", "Oracle"],
+      // techStack: ["PostgreSQL", "C", "Python", "Oracle"],`
     },
     {
       id: 3,

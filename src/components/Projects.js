@@ -24,8 +24,12 @@ function Projects() {
               />
             
               <div className="buttons">
-                <a href="#" className="btn btn-primary">View Demo</a>
-                <a href="#" className="btn btn-outline">Source Code</a>
+              <button className="btn btn-primary" onClick={() => window.open(project.demoUrl, '_blank')}>
+                View Demo
+              </button>
+              <button className="btn btn-outline" onClick={() => window.open(project.codeUrl, '_blank')}>
+                Source Code
+              </button> 
               </div>
             </div>
 

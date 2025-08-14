@@ -9,7 +9,7 @@ const projectsData = [
         "Developed a scalable platform with an AI assistant utilizing Retrieval-Augmented Generation (RAG) and FAISS to deliver personalized restaurant recommendations and seamless reservation services.",
         "Implemented a microservices architecture with asynchronous messaging queues, Redis caching, and Elasticsearch, improving system performance, scalability, and user experience by 30%."
       ],
-      image: "/assets/project1.png", // or wherever your image is located
+      image: require("../assets/project2.png"), // or wherever your image is located
       alt: "NextMeal project "
     },
     {
