@@ -23,14 +23,24 @@ function Projects() {
               className={`project-image ${project.id === 2  ? 'special-size' : ''}`}
               />
             
-              <div className="buttons">
-              <button className="btn btn-primary" onClick={() => window.open(project.demoUrl, '_blank')}>
+            <div className="buttons">
+              <button 
+                className="btn btn-primary" 
+                onClick={() => project.demoUrl && window.open(project.demoUrl, '_blank', 'noopener,noreferrer')}
+                disabled={!project.demoUrl}
+                aria-label={`View demo of ${project.title}`}
+              >
                 View Demo
               </button>
-              <button className="btn btn-outline" onClick={() => window.open(project.codeUrl, '_blank')}>
+              <button 
+                className="btn btn-outline" 
+                onClick={() => project.codeUrl && window.open(project.codeUrl, '_blank', 'noopener,noreferrer')}
+                disabled={!project.codeUrl}
+                aria-label={`View source code for ${project.title}`}
+              >
                 Source Code
               </button> 
-              </div>
+            </div>
             </div>
 
             {/* Right Side: Project Info */}

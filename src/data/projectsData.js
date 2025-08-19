@@ -10,7 +10,9 @@ const projectsData = [
         "Implemented a microservices architecture with asynchronous messaging queues, Redis caching, and Elasticsearch, improving system performance, scalability, and user experience by 30%."
       ],
       image: require("../assets/project2.png"), // or wherever your image is located
-      alt: "NextMeal project "
+      alt: "NextMeal project ",
+      demoUrl: "https://nextmeal-demo.com", // Add your actual demo URL
+      codeUrl: "https://github.com/yourusername/nextmeal" // Add your actual code URL
     },
     {
       id: 2,
@@ -22,7 +24,9 @@ const projectsData = [
         "Optimized MySQL schema for performance and scalability, enhanced UI/UX with responsive design, and implemented sorting, filtering, and user authentication via Express.js and RESTful APIs."
       ],
       image: require("../assets/QAlogo.webp"),
-      alt: "CodeQuery project logo"
+      alt: "CodeQuery project logo",
+      demoUrl: "https://codequery-demo.com", // Add your actual demo URL
+      codeUrl: "https://github.com/yourusername/codequery" // Add your actual code URL
     },
     {
       id: 3,
@@ -35,7 +39,9 @@ const projectsData = [
         "Identified distinct customer segments via transaction behavior, enabling effective targeted marketing campaigns."
       ],
       image: require("../assets/segmente.png"),
-      alt: "CodeQuery project logo"
+      alt: "CodeQuery project logo",
+      demoUrl: "https://codequery-demo.com", // Add your actual demo URL
+      codeUrl: "https://github.com/yourusername/codequery" // Add your actual code URL
     }
   ];
   
